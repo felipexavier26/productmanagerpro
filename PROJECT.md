@@ -12,6 +12,8 @@ Este é um sistema para gerenciamento de produtos, desenvolvido com Laravel no b
 - **MySQL**: Banco de dados utilizado para armazenamento de informações.
 - **Inertia.js**: Permite integração perfeita entre Laravel e React para a criação de SPAs.
 - **Tailwind CSS**: Framework CSS para o design responsivo e estilizado da interface.
+- **SweetAlert2**: Biblioteca JavaScript para exibir alertas e notificações modais elegantes.
+- **Bootstrap**: Framework CSS para estilização e estruturação responsiva da interface.
 
 ---
 
@@ -31,20 +33,14 @@ Este é um sistema para gerenciamento de produtos, desenvolvido com Laravel no b
     }
     ```
   - Suporte a operações CRUD (criação, leitura, atualização e exclusão) de produtos.
-- **Autenticação**:
-  - Implementada com Laravel Breeze para registro, login e logout.
+- **Autenticação**:  - Implementada com Laravel Breeze para registro, login e logout.
 
 ### Frontend
-- **CRUD de Produtos**:
-  - Funcionalidades para listar, adicionar, editar e excluir produtos.
-- **Paginação**:
-  - Componente de paginação dinâmica para navegar entre páginas de produtos.
-- **Interface Responsiva**:
-  - Desenvolvida com React e estilizada com Tailwind CSS.
-- **Status do Produto**:
-  - Campo de status ativo/inativo (ativo = 1, inativo = 0) com alternância simples.
-- **Alertas e Validação**:
-  - Mensagens claras de sucesso e erro para feedback ao usuário.
+- **CRUD de Produtos**:  - Funcionalidades para listar, adicionar, editar e excluir produtos.
+- **Paginação**:  - Componente de paginação dinâmica para navegar entre páginas de produtos.
+- **Interface Responsiva**:  - Desenvolvida com React e estilizada com Tailwind CSS.
+- **Status do Produto**:  - Campo de status ativo/inativo (ativo = 1, inativo = 0) com alternância simples.
+- **Alertas e Validação**:  - Mensagens claras de sucesso e erro para feedback ao usuário.
 
 ---
 
@@ -68,23 +64,41 @@ DB_PASSWORD=
 ### Passos
 1. **Clone o Repositório**:
    ```bash
-   git clone https://github.com/felipexavier26/productmanagerpro
+   git clone https://github.com/felipexavier26/productmanagerpro.git
    cd seu-repositorio
 
 2. **Configuração do Backend**:
    ```bash
+
+   - Instale as dependências do Laravel
    composer install
 
-   ```bash
+   - Copie o arquivo de exemplo de configuração
    cp .env.example .env
 
 
 3. **Execute as migrações e seeders**:
-    ```bash
+   ```bash
     php artisan migrate --seed
 
+4. **Geração de Chave da Aplicação**:
+   ```bash
+    php artisan key:generate
 
-4. **Configuração do Frontend**:
+
+5. **Configuração do Frontend**:
     ```bash
-    <li>Instale as dependências do npm:</li>
-    npm install
+    - Instale as dependências do npm:
+        npm install
+    
+    - Compile os arquivos do frontend
+        npm run dev
+
+
+6. **Inicie o Servidor de Desenvolviment**:
+    ```bash
+    php artisan serve
+
+7. **Inicie o Servidor de Desenvolviment**:
+    ```bash
+    Abra o navegador em http://localhost:8000.
