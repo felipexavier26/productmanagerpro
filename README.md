@@ -66,7 +66,7 @@ Este é um sistema para gerenciamento de produtos, desenvolvido com Laravel no b
 1. **Clone o Repositório**:
    ```bash
    git clone https://github.com/felipexavier26/productmanagerpro.git
-   cd seu-repositorio
+   cd productmanagerpro
 
 2. **Configuração do Backend**:
    ```bash
