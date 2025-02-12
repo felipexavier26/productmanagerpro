@@ -45,15 +45,6 @@ Este é um sistema para gerenciamento de produtos, desenvolvido com Laravel no b
 ---
 
 
-## Configuração do Banco de Dados
-    
-    DB_CONNECTION=mysql
-    DB_HOST=127.0.0.1
-    DB_PORT=3306
-    DB_DATABASE=product_manager
-    DB_USERNAME=root
-    DB_PASSWORD=
-
 ## Instruções de Instalação e Execução
 
 ### Requisitos
@@ -63,6 +54,17 @@ Este é um sistema para gerenciamento de produtos, desenvolvido com Laravel no b
 - **MySQL**: Banco de dados configurado e acessível.
 
 ### Passos
+
+## Configuração do Banco de Dados
+    
+    DB_CONNECTION=mysql
+    DB_HOST=127.0.0.1
+    DB_PORT=3306
+    DB_DATABASE=product_manager
+    DB_USERNAME=root
+    DB_PASSWORD=
+
+    
 1. **Clone o Repositório**:
    ```bash
    git clone https://github.com/felipexavier26/productmanagerpro.git
@@ -80,6 +82,7 @@ Este é um sistema para gerenciamento de produtos, desenvolvido com Laravel no b
 
 3. **Execute as migrações e seeders**:
    ```bash
+    php artisan migrate
     php artisan migrate --seed
 
 4. **Geração de Chave da Aplicação**:
@@ -96,10 +99,20 @@ Este é um sistema para gerenciamento de produtos, desenvolvido com Laravel no b
         npm run dev
 
 
-6. **Inicie o Servidor de Desenvolviment**:
+6. **Inicie o Servidor de Desenvolvimento**:
     ```bash
     php artisan serve
 
-7. **Inicie o Servidor de Desenvolviment**:
+7. **Inicie o Servidor de Desenvolvimento**:
     ```bash
     Abra o navegador em http://localhost:8000.
+
+
+
+
+![image](https://github.com/user-attachments/assets/6ec53c68-2bc4-4baf-98c5-058a20e241f3)
+
+![image](https://github.com/user-attachments/assets/548c07a6-ed47-4c61-ad2d-46e8d5bc07eb)
+
+![image](https://github.com/user-attachments/assets/83bc0fe1-2232-4514-a2e3-817cb52fe1d5)
+
